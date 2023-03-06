@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+    <body>
+        <div class="footer">
+            <script>
+		function appendtoCSV() {
+			// Get form data
+			var rows = [];
+			var inputs = document.querySelectorAll("input[type=text], input[type=email], textarea");
+			for (var i = 0; i < inputs.length; i += 3) {
+				var name = inputs[i].value;
+				var email = inputs[i+1].value;
+				var row = [name, email, message];
+				rows.push(row);
+			}
+			
+			// Create CSV content
+			var csvContent = "";
+			rows.forEach(function(rowArray) {
+				var row = rowArray.join(",");
+				csvContent += row + "\r\n";
+			});
+			
+			// Read existing file
+			var fileInput = document.getElementById("userData.csv");
+			var file = fileInput.files[0];
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				var existingContent = e.target.result;
+				
+				// Append CSV content to existing content
+				var updatedContent = existingContent + csvContent;
+				
+				// Write updated content back to file
+				var blob = new Blob([updatedContent], {type: "text/csv;charset=utf-8"});
+				saveAs(blob, "userData.csv");
+			};
+			reader.readAsText(file);
+		}
+            </script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+        </head>
+        <body>
+
+            <div class="newsletter-sign-up">
+                <form action="/submit" method="post" id="form">
+                    <h2>Sign up for weekly newsletters!</h2>
+                    <h3>Name</h3>
+                    <input type="text" placeholder="Name McName" name="username" id="username" required>
+                    <h3>Email Id</h3>
+                    <input type="email" placeholder="YourEmailID@gmail.com" name="email" id="emailID" required>
+                    <button type="submit" onclick="appendtoCSV()">
+                        <p>Sign Up</p>
+                    </button>
+                </form>
+            </div>
+
+            <hr style="width: 2px; height: 300px; color: white; background-color: white; margin: 30px;">
+            
+            <div class="footer-links">
+                <h6>
+                    <a href="./feedback.html" style="color: white;">Feedback -</a>
+                </h6>
+                <p>
+                    <a href="./feedback.html" style="text-decoration: underline; color: white;">
+                        What did you think about the website? Take a quick survey!</a>
+                </p>
+                
+                <h6>Contact - </h6>
+                <p>anemailid@awebsite.com</p>
+            </div>
+        </div>
+    </body>
+
+</html>
+

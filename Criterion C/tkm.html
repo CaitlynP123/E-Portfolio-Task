@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="img/x-icon" href="./Crit-C-Images/logo.png">
+
+        <title>The Thomas-Kilmann Conflict Mode Instrument</title>
+    </head>
+
+    <body>
+        <script language="javascript" type="text/javascript" src="menubar.txt"></script>
+
+
+        <div class="tkm-content" style="display: flex; margin-top: 85px;">
+            <div class="axis-text-1">
+                <h2 style="font-family: 'DM Sans';">Assertiveness</h2>
+            </div>
+
+            <h4 style="position: absolute; left: 0; margin-left: 60px; margin-top: -25px;">HIGH</h4>
+            <hr style="width: 5px; height:525px; background-color: black; margin-left: 30px;"/>
+
+            <div class="modal-buttons" style="margin: 20px;">
+                    <div class="links-col" style="display: block; margin-top: 0px;">
+                        <button onclick="openModal('modal1')" style="background-color: #acbcea;">
+                            <h2>Competeing</h2>
+                            <p><i>Click Me!</i></p>
+                        </button>
+                        
+                        <div id="modal1" class="modal">
+                            <div class="modal-content" style="display: flex; margin-top: 11%;">
+                                <br>
+                                <img src="./Crit-C-Images/jonathan-chng-3R4vPrSB1c4-unsplash.jpg" 
+                                    width="40%" 
+                                    style="border-bottom-left-radius: 30px; border-top-left-radius: 30px;"
+                                />
+                                
+                                <div class="txt" style="padding: 20px; margin-bottom: 20px;">
+                                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                                    <br><br>
+                                    <h1 style="font-family: 'DM Sans'; font-weight: bold;">Competeing</h1>
+                                    <p>
+                                        <b><i>Not Cooperative, Very Assertive</i></b>
+                                        <br><br>
+                                        In this method an individual in a group, pursues their own 
+                                        interest rather than keeping group interests in mind. This is 
+                                        done at the expense of a good outcome or of another group member. 
+                                        It can be a rather selfish approach, but if the person 'competing' 
+                                        isn't being heard, then its a good way to get their point across
+                                    </p>    
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                        <button onclick="openModal('modal2')" style="background-color: #acbcea;">
+                            <h2>Collaborating</h2>
+                            <p><i>Click Me!</i></p>
+                        </button>
+                        
+                        <div id="modal2" class="modal">
+                            <div class="modal-content" style=" display: flex; margin-top: 12%;">
+                                <br>
+                                <div class="txt" style="padding: 20px; margin-bottom: 20px; align-self: center;">
+                                    <h1 style="font-family: 'DM Sans'; font-weight: bold;">Collaborating</h1>
+                                    <p>
+                                        <b><i>Very Cooperative, Very Assertive</i></b>
+                                        <br><br>
+                                        Collaborating is to work together with group memebers and come up 
+                                        with a solution jointly, to produce an excellent outcome and learn 
+                                        from each other. Out of all the methods, this one encorages 
+                                        fruitful communication the most
+                                    </p> 
+                                </div>
+                                <img src="./Crit-C-Images/krakenimages-Y5bvRlcCx8k-unsplash.jpg" 
+                                    width="40%"
+                                    style="border-bottom-right-radius: 20px; border-top-right-radius: 30px;"
+                                />
+                                <span class="close" onclick="closeModal('modal2')"
+                                    style="margin: 0px; margin-left: -25px; margin-top: 5px;"
+                                >
+                                    &times;
+                                </span >                         
+                            </div>
+                        </div>    
+
+                    </div>
+
+                <div class="links-col">
+                    <button onclick="openModal('modal3')" style="background-color: #acbcea; align-self: center;">
+                        <h2>Compromising</h2>
+                        <p><i>Click Me!</i></p>
+                    </button>
+                    
+                    <div id="modal3" class="modal">
+                        <div class="modal-content" style="margin-top: 5%;">
+                            <div class="txt" style="padding: 20px;">
+                                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                                <br><br>
+                                <h1 style="font-family: 'DM Sans'; font-weight: bold;">Compromising</h1>
+                                <p>
+                                    <b><i>A Perfect balance of Cooperativeness and Assertiveness</i></b>
+                                    <br><br>
+                                    Compromising is when conflciting parties each make their own 
+                                    compromises and come to a joint solution while prioritizing the 
+                                    task they have been assigned over the argument they've been having. 
+                                    Its finding a middle-ground in the situation and working from 
+                                    there. Fairly similar to collaborating.
+                                </p>                                
+                            </div>
+
+                            <img
+                                src="./Crit-C-Images/compromise-02.png"
+                                width="80%"
+                            />
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="links-col" style="display: block;">
+                    <button onclick="openModal('modal5')" style="background-color: #acbcea;">
+                        <h2>Avoiding</h2>
+                        <p><i>Click Me!</i></p>
+                    </button>
+                    <div id="modal5" class="modal">
+                        <div class="modal-content" style="margin-top: 3.5%;">
+                            <div class="txt" style="padding: 20px;">
+                                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                                <br><br>
+                                <h1 style="font-family: 'DM Sans'; font-weight: bold;">Avoiding</h1>
+                                <p>
+                                    <b><i>Not Cooperative, Not Assertive</i></b>
+                                    <br><br>
+                                    As the name would suggest, avoiding is simply ignoring the conflict in the 
+                                    hopes that it will resolve itself. This approach does work to some extent, 
+                                    but only in situations where members can't deal with the conflict, mostly 
+                                    due to time constraints. But sometimes conflicts are like snowballs 
+                                    rolling down a hill. They'll just get bigger over time, so its best to 
+                                    avoid, avoiding it when you can. 
+                                </p>                                
+                            </div>
+                            <img src="./Crit-C-Images/avoiding.jpg" width="100%" height="350px"
+                                style="border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;"
+                            />
+                        </div>
+                    </div>
+                    
+                    <button onclick="openModal('modal4')" style="background-color: #acbcea;">
+                        <h2>Accommodating</h2>
+                        <p><i>Click Me!</i></p>
+                    </button>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content" style="margin-top: 4%;">
+                            <div class="txt" style="padding: 20px;">
+                                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                                <br>
+                                <br>
+                                <h1 style="font-family: 'DM Sans'; font-weight: bold;">Accommodating</h1>
+                                <p>
+                                    <b><i>Very Cooperative, Not Assertive</i></b>
+                                    <br><br>
+                                    Resolving conflicts by putting ones needs above your own. This 
+                                    is a rather quick method to resolving a conflict, but it can be 
+                                    unsatisfying simultaneously. While resolving conflicts if only 
+                                    one person is happy in the outcome, then productivity and 
+                                    motivation can be lowered. But it's best to keep in mind that 
+                                    when there are time constraints, it's better to be the bigger 
+                                    person and carry on.
+                                </p>                                
+                            </div>
+
+                            <img
+                                src="./Crit-C-Images/full-shot-man-helping-woman-climb.jpg"
+                                width="100%"
+                                height="325px"
+                                style="margin-bottom: -10px;
+                                    border-bottom-left-radius: 30px;
+                                    border-bottom-right-radius: 30px;
+                                "
+                            />
+                        </div>
+                    </div>                     
+                </div>
+                <script>
+                    function openModal(modalId) {
+                        var modal = document.getElementById(modalId);
+                        modal.style.display = "block";
+                    }
+
+                    function closeModal(modalId) {
+                        var modal = document.getElementById(modalId);
+                        modal.style.display = "none";
+                    }                       
+                </script>
+
+                <h4 style="position: absolute; left: 0; margin-left: 75px; margin-top: 17px;">LOW</h4> 
+                <hr style="width: 650px; height: 5px; background-color: black; margin-top: 30px;"/>
+                <h4 style="position: absolute; left: 0; margin-left: 800px; margin-top: -25px;">HIGH</h4> 
+                <h2 style="font-family: 'DM Sans'; font-size: 30px; text-align: center;">Cooperativeness</h2>
+            </div>
+
+            <div class="tkm-text" style="display: flex; flex-direction: column; width: 40%; margin: 0px 50px 0px 50px;">
+                <h1 style="font-size: 50px;">The Thomas Kilmann Conflict Mode Instrument</h1>
+                <p style="font-size: 14px;"><a href="index.html">Home</a> > <a href="./intro-con-res.html">Introduction to Conflict Resolution</a> > <a href="./tkm.html">The Thomas-Kilmann Model</a></p>
+                <br>
+        
+                <p style="font-size: 20px;">The Thomas-Kilmann Conflict Mode Instrument, developed by Kenneth W. Thomas and Ralph 
+                    Kilmann, is a model that lists 5 strategies to deal with conflict in a situation and it 
+                    rates them on a scale of assertiveness and cooperativeness.
+                    <br>
+                    <br>
+                    <b>The 5 measures are Avoiding, Accommodating, Competeing, Collaborating and Compromising.</b>
+                    <br>
+                    <br>
+                    Its more commonly used in corporate settings and to determine a persons style of conflict resolution, 
+                    but it can be applied in multiple situations.
+                </p>
+    
+            </div>
+        </div>
+            
+            <div class="cms" style="text-align: left;">
+            <br>
+			<hr style="width: 300px; height: 3px; background-color: darkblue; margin-top: 20px; margin-bottom: 20px;"/>
+			<br>
+
+			<h3 style="font-size: 25px; margin-left: 50px;">What did you think about this page? Share your thoughts here!</h3>
+            <script language="javascript" type="text/javascript" src="comment-section.txt" style="text-align: left;"></script>
+            </div>
+        </div>
+
+        <div class="tkm-footer">
+            <script language="javascript" type="text/javascript" src="footer.txt"></script>
+            <script language="javascript" type="text/javascript" src="testercode.js"></script>         
+        </div>
+    </body>
+</html>

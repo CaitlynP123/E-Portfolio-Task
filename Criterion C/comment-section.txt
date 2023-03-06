@@ -1,0 +1,1 @@
+document.write('<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="style.css"></head><body><div class="container"><textarea id="comment" placeholder="Leave a Comment"></textarea><button id="addComments">Add</button><div id="allComments"></div></div><script src="./cmms.js"></script></body></html>')
